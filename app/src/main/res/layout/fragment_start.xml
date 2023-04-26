@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:saveEnabled="false"
     tools:context=".fragments.StartFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:saveEnabled="false"
         android:text="@string/text_welcome"
         android:textAlignment="center"
         android:textColor="@color/blue_200"
@@ -26,6 +28,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="32dp"
+        android:saveEnabled="false"
         android:text="@string/btn_title_start"
         android:textColor="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="parent"

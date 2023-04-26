@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:saveEnabled="false"
     tools:context=".fragments.ResultFragment">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp"
+        android:saveEnabled="false"
         android:text="@string/text_result"
         android:textAlignment="center"
         android:textColor="@color/blue_200"
@@ -30,12 +32,41 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="72dp"
         android:layout_marginEnd="32dp"
-        android:text="O jogador xxx\nganhou"
+        android:saveEnabled="false"
         android:textAlignment="center"
         android:textColor="@color/blue_200"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_result" />
+
+    <TextView
+        android:id="@+id/tv_player_selection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:saveEnabled="false"
+        android:textColor="@color/blue_200"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_winner" />
+
+    <TextView
+        android:id="@+id/tv_ai_selection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:saveEnabled="false"
+        android:textColor="@color/blue_200"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_player_selection"
+        app:layout_constraintTop_toBottomOf="@+id/tv_player_selection" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
